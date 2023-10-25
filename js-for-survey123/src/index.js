@@ -5,27 +5,6 @@ import { featureCollection } from "@turf/helpers";
 import pointsWithinPolygon from "@turf/points-within-polygon";
 import { lineString } from "@turf/helpers";
 
-//------------------------------------------Infos Gerais-------------------------------------------//
-//
-//  V.1.0 - Funções Para o Funcionamento do Survey123 com o Node para consultas Offline.
-//  V.1.1 - Códigos foram refatorados para melhorar a recursividade e entendimente.
-//        - Em relação a performace o calculo do objeto mais próximo melhorou e não causa
-//          mais travamentos na máquina.
-//
-//  Em primeiro momento, é possível utilizar a função Feature to JSON do ArcPRO.
-//  Para o funcionamento das funções é necessário retirar as linhas de começo dos JSONs até a 
-//  [feature], ainda é necessário realizar essa etapa para facilitar a edição dos dados
-//  por outros usuários.
-//
-//
-//  A biblioteca utilizada para as funções foi a TURF.js (https://turfjs.org/)
-//  as funções podem ser consultadas no link para documentação.
-//
-//
-//  A funções com <export> são exportadas para o Survey, caso seja só necessário dentro de outra função
-//  é somente necessário declarar como function
-//
-//-------------------------------------------------------------------------------------------------//
 //-----------------------------------------Início do código----------------------------------------//
 //
 //  Transformam as linhas desenhados dos surveys, sendo necessário retirar o campo de altura 
