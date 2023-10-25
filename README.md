@@ -1,6 +1,7 @@
 # Infos Gerais
- V.1.0 - Funções Para o Funcionamento do Survey123 com o Node para consultas Offline.
- V.1.1 - Códigos foram refatorados para melhorar a recursividade e entendimente.
+V.1.0 - Funções Para o Funcionamento do Survey123 com o Node para consultas Offline.
+
+V.1.1 - Códigos foram refatorados para melhorar a recursividade e entendimente.
        - Em relação a performace o calculo do objeto mais próximo melhorou e não causa mais travamentos na máquina.
 
  Em primeiro momento, é possível utilizar a função Feature to JSON do ArcPRO.
