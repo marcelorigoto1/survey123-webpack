@@ -61,16 +61,9 @@ function checkLineIntersection(survey123Line, filePath) {
 }
 
 export function intersectLinhaIndigena(survey123Line) {
-  return checkLineIntersection(survey123Line, require('./TI_SC.json'));
+  return checkLineIntersection(survey123Line, require(<archive_relative_path>));
 }
 
-export function intersectLinhaApp(survey123Line) {
-  return checkLineIntersection(survey123Line, require('./APP_SC.json'));
-}
-
-export function intersectLinhaUnidade(survey123Line) {
-  return checkLineIntersection(survey123Line, require('./UCs_SC.json'));
-}
 
 
 //-------------------------------------------------------------------------------------------------//
@@ -95,15 +88,7 @@ function checkIntersection(survey123Poligono, filePath) {
 }
 
 export function intersectIndigena(survey123Poligono) {
-  return checkIntersection(survey123Poligono, require('./TI_SC.json'));
-}
-
-export function intersectApp(survey123Poligono) {
-  return checkIntersection(survey123Poligono, require('./APP_SC.json'));
-}
-
-export function intersectUnidade(survey123Poligono) {
-  return checkIntersection(survey123Poligono, require('./UCs_SC.json'));
+  return checkIntersection(survey123Poligono, require(<archive_relative_path>));
 }
 
 //-------------------------------------------------------------------------------------------------//
@@ -130,15 +115,7 @@ function checkWithinPolygon(input, filePath) {
 }
 
 export function withinApp(input) {
-  return checkWithinPolygon(input, require('./APP_SC.json'));
-}
-
-export function withinIndigena(input) {
-  return checkWithinPolygon(input, require('./TI_SC.json'));
-}
-
-export function withinUnidade(input) {
-  return checkWithinPolygon(input, require('./UCs_SC.json'));
+  return checkWithinPolygon(input, require(<archive_relative_path>));
 }
 
 //-------------------------------------------------------------------------------------------------//
@@ -165,24 +142,9 @@ function getNearestProperty(acesso, property) {
 }
 
 export function getNearest(acesso) {
-  return getNearestProperty(acesso, 'LOCAL_INSTALACAO');
+  return getNearestProperty(acesso, <field_name>);
 }
 
-export function getTorre(acesso) {
-  return getNearestProperty(acesso, 'NOME_ESTRUT');
-}
-
-export function getLinha(acesso) {
-  return getNearestProperty(acesso, 'LT_SAP');
-}
-
-export function getCentro(acesso) {
-  return getNearestProperty(acesso, 'NOME_CENTRO_MAN');
-}
-
-export function getArea(acesso) {
-  return getNearestProperty(acesso, 'AREA_OPE');
-}
 
 
 export { dev } from "./survey123/lib.js";
