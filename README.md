@@ -1,20 +1,14 @@
-# Infos Gerais
-V.1.0 - Funções Para o Funcionamento do Survey123 com o Node para consultas Offline.
+General Information
+V.1.0 - Functions for Survey123 Operation with Node for Offline Queries.
 
-V.1.1 - Códigos foram refatorados para melhorar a recursividade e entendimente.
-       - Em relação a performace o calculo do objeto mais próximo melhorou e não causa mais travamentos na máquina.
+V.1.1 - Codes were refactored to improve recursion and clarity.
+- Regarding performance, the calculation of the nearest object has been improved and no longer causes machine freezes.
 
- Em primeiro momento, é possível utilizar a função Feature to JSON do ArcPRO.
- Para o funcionamento das funções é necessário retirar as linhas de começo dos JSONs até a [feature], ainda é necessário realizar essa etapa para facilitar a edição dos dados por outros usuários.
+Initially, it is possible to use the Feature to JSON function of ArcPRO.
+To operate the functions, it is necessary to remove the starting lines of the JSONs until [feature]. This step is still necessary to facilitate data editing by other users.
 
-<add---image>
-
- A biblioteca utilizada para as funções foi a TURF.js (https://turfjs.org/)
- as funções podem ser consultadas no link para documentação.
-
-
- A funções com <export> são exportadas para o Survey, caso seja só necessário dentro de outra função
- é somente necessário declarar como function
+The library used for the functions was TURF.js (https://turfjs.org/). The functions can be consulted in the documentation link.
+Functions with `<export>` are exported to Survey123. If they are only needed within another function, it is sufficient to declare them as a function.
 
 # JavaScript Functions for Survey123
 With newer releases of Survey123 you are allowed to extend the function of a question by including a JavaScript file in the extension for the survey.  This provided the survey the ability to leverage additional logic to calculate the value of a question.  This function came with some limitations on how much JavaScript could be included in the question.  This library allows the user to bring in WebPacked JS functions and additional libraries to extend that even further.
