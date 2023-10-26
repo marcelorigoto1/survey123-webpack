@@ -1,4 +1,4 @@
-#General Information
+# General Information
 V.1.0 - Functions for Survey123 Operation with Node for Offline Queries.
 
 V.1.1 - Codes were refactored to improve recursion and clarity.
